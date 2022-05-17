@@ -19,6 +19,8 @@
    <link rel="stylesheet" href="./css/blocks/card.css">
    <link rel="stylesheet" href="./css/blocks/avatar.css">
    <link rel="stylesheet" href="./css/blocks/footer.css">
+   <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css">
+   <link rel="stylesheet" href="./css/blocks/mobile-nav.css">
    <!--Fonts-->
    <link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css">
    <link rel="stylesheet" href="./css/fonts/Lato/stylesheet.css">
@@ -29,9 +31,7 @@
    <header class="header">
       <div class="container">
          <div class="header-row">
-            <div class="header-logo">
-               <img src="./img/logo.svg" alt="Logo">
-            </div>
+            <div class="header-logo"><img src="./img/logo.svg" alt="Logo" /></div>
             <nav class="header-nav">
                <ul>
                   <li><a href="#">Why Alivio</a></li>
@@ -41,12 +41,16 @@
                </ul>
             </nav>
             <div class="header-login">
-               <a href="#" class="header-login-link">Sign In</a>
+               <a class="header-login-link" href="#">Sign in</a>
                <a href="#" class="btn">Start Trial</a>
             </div>
+            <button type="button" class="mobile-nav-button">
+               <span class="mobile-nav-button__icon"></span>
+            </button>
          </div>
       </div>
    </header>
+
    <main>
       <section class="home">
          <div class="container">
@@ -208,6 +212,7 @@
       </div>
    </footer>
 
+   <script src="./js/main.js"></script>
 </body>
 
 </html>
